@@ -1,8 +1,32 @@
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
 
+        // 1. and 2.______________________________
         variables();
+        //________________________________________
+
+        // 3. user input__________________________
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter your name: ");
+        String name = scanner.nextLine();
+
+        System.out.println("Enter your age: ");
+        int age = scanner.nextInt();
+        scanner.nextLine(); // get rid of the \n character for nextInt() and nextDouble()
+
+        // nextDouble(), nextBoolean()...
+
+
+        System.out.println("Hello " + name);
+        System.out.println("You are " + age + " years old.");
+
+
+        scanner.close();
+        //________________________________________
+
 
     }
 
